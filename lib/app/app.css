@@ -1,0 +1,10 @@
+/* 项目公共样式 */
+body {
+    /* https://ant.design/docs/spec/font-cn#字体家族 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+}
+
+.body--app {
+    background-image: url(res/light_wool.png);
+    background-repeat: repeat;
+}

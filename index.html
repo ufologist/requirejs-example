@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基于 RequireJS 的跨项目共用前端组件(模块)方案</title>
+</head>
+<body class="body--app">
+    <h1>基于 RequireJS 的跨项目共用前端组件(模块)方案</h1>
+    <div>
+        <span class="js-mod-finished"></span>
+        <button class="js-clipboard-copy" data-clipboard-target=".js-mod-finished">复制</button>
+    </div>
+
+    <h2>共用组件示例</h2>
+    <div class="js-component"></div>
+
+    <h2>项目公共逻辑示例</h2>
+    <div class="js-app-hello"></div>
+
+    <h2>项目组件示例</h2>
+    <ul class="box-list">
+        <li class="box-list__item">flex box</li>
+        <li class="box-list__item">flex box</li>
+        <li class="box-list__item">flex box</li>
+        <li class="box-list__item">flex box</li>
+    </ul>
+
+    <h2>页面逻辑示例</h2>
+    <div class="js-mod-content"></div>
+
+    <script src="//cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
+    <script>
+    // 使用异步加载的方式来启动入口模块, 这样有助于尽早触发 DOMContentLoaded 事件
+    // 如果使用同步的方式来加载, 即通过 script 标签来引用 require-base-config.js,
+    // 再使用 require(['./index/index.js']) 来启动入口模块,
+    // 如果 require-base-config.js 加载延时, 就会增加 DOMContentLoaded 的时间.
+    require(['//rawgit.com/ufologist/requirejs-component/master/require-base-config.js'], function() {
+        // 开发环境
+        require(['./index/index.js']);
+        // 正式环境
+        // require(['//rawgit.com/ufologist/requirejs-example/master/index/index.js']);
+    });
+    </script>
+</body>
+</html>
