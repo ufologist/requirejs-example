@@ -2,7 +2,7 @@
 
 [预览效果](https://ufologist.github.io/requirejs-example/index.html)
 
-[基于 RequireJS 的跨项目共用前端组件(模块)方案](https://github.com/ufologist/requirejs-component/blob/master/principle.md)
+[基于 RequireJS 的跨项目共用前端组件(模块)方案](https://github.com/ufologist/requirejs-component/blob/gh-pages/principle.md)
 
 ## 目录说明
 
