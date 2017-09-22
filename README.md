@@ -1,6 +1,6 @@
 # 使用共用组件的项目示例
 
-[预览效果](https://rawgit.com/ufologist/requirejs-example/master/index.html)
+[预览效果](http://ufologist.github.io/requirejs-example/index.html)
 
 [基于 RequireJS 的跨项目共用前端组件(模块)方案](https://github.com/ufologist/requirejs-component/blob/master/principle.md)
 
