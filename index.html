@@ -36,11 +36,11 @@
     // 如果使用同步的方式来加载, 即通过 script 标签来引用 require-base-config.js,
     // 再使用 require(['./index/index.js']) 来启动入口模块,
     // 如果 require-base-config.js 加载延时, 就会增加 DOMContentLoaded 的时间.
-    require(['//rawgit.com/ufologist/requirejs-component/master/require-base-config.js'], function() {
+    require(['//ufologist.github.io/requirejs-component/require-base-config.js'], function() {
         // 开发环境
         require(['./index/index.js']);
         // 正式环境
-        // require(['//rawgit.com/ufologist/requirejs-example/master/index/index.js']);
+        // require(['//ufologist.github.io/requirejs-example/index/index.js']);
     });
     </script>
 </body>
