@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>基于 RequireJS 的跨项目共用前端组件(模块)方案</title>
+    <script>
+    // 统一规划 JS 的全局变量, 将全局变量限定到可控范围最大避免冲突
+    // 系统全局变量
+    window.globalData = {};
+    // 页面全局变量
+    window.pageData = {};
+    </script>
 </head>
 <body class="body--app">
     <h1><a href="https://github.com/ufologist/requirejs-component/blob/gh-pages/principle.md">基于 RequireJS 的跨项目共用前端组件(模块)方案</a></h1>
